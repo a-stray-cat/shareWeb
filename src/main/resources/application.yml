@@ -2,8 +2,8 @@ spring:
   datasource:
     username: root
     password: 115619
-    url: jdbc:mysql://localhost:3306/a-astray-cat?useSSL=false&serverTimezone=GMT%2B8&allowPublickeyRetrieval=true
-    driver-class-name: com.mysql.cj.jdbc.Drive
+    url: jdbc:mysql://localhost:3306/a-stray-cat?useSSL=false&serverTimezone=GMT%2B8&allowPublickeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
   type-aliases-package: a-stray-cat.demo.mapper
