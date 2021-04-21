@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="astraycat.demo.mapper.AdminMapper">
+	<resultMap  type="astraycat.demo.mapper.AdminMapper" id="admin_result">
+		<id column="adminname" property="adminname" javaType="java.lang.String" jdbcType="VARCHAR"/>
+ 		<result column="adminpassword" property="adminpassword" javaType="java.lang.String" jdbcType="VARCHAR"/>
+	</resultMap>
+	<!-- 通过用户名查询用户 -->
+ 	<select id="selectAdminByAdminname" parameterType="java.lang.String" resultType="astraycat.demo.model.Admin">
+ 		select
+ 		*
+ 		from admin where adminname=#{adminname}
+ 	</select>
+ 	<!-- 通过用户名和密码查询用户 -->
+ 	<select id="selectAdminByAdminnameAndPassword" parameterType="java.lang.String" resultType="astraycat.demo.model.Admin">
+ 		select
+ 		*
+ 		from admin where adminname=#{adminname} and adminpassword=#{adminpassword}
+ 	</select>
+</mapper>
