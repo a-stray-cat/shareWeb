@@ -10,6 +10,9 @@ import astraycat.demo.model.HomepageInformation;
 import astraycat.demo.service.InformationService;
 import net.sf.json.JSONObject;
 
+/**
+ * @author 资源信息管理Controller
+ */
 @RestController
 @RequestMapping("/homepage")
 public class InformationController {
