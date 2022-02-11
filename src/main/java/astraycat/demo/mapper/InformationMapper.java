@@ -8,5 +8,5 @@ import astraycat.demo.model.HomepageInformation;
 
 @Mapper
 public interface InformationMapper {
-	public List<HomepageInformation> selectHomepageInformation();
+  public List<HomepageInformation> selectHomepageInformation();
 }

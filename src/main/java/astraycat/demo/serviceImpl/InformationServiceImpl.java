@@ -10,16 +10,13 @@ import astraycat.demo.model.HomepageInformation;
 import astraycat.demo.service.InformationService;
 
 @Service
-public class InformationServiceImpl implements InformationService{
-	
-	@Autowired
-	InformationMapper informationmapper;
-	
-	@Override
-	public List<HomepageInformation> getInformation(HomepageInformation information) {
-		// TODO Auto-generated method stub
-		//调用mapper实现查询
-		return informationmapper.selectHomepageInformation();
-	}
-	
+public class InformationServiceImpl implements InformationService {
+
+  @Autowired InformationMapper informationmapper;
+
+  @Override
+  public List<HomepageInformation> getInformation(HomepageInformation information) {
+    // 调用mapper实现查询
+    return informationmapper.selectHomepageInformation();
+  }
 }

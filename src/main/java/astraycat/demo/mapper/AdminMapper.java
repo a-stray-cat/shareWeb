@@ -6,6 +6,7 @@ import astraycat.demo.model.Admin;
 
 @Mapper
 public interface AdminMapper {
-	public Admin selectAdminByAdminnameAndPassword(String adminname,String adminpassword);
-	public Admin selectAdminByAdminname(String adminname);
+  public Admin selectAdminByAdminnameAndPassword(String adminname, String adminpassword);
+
+  public Admin selectAdminByAdminname(String adminname);
 }
